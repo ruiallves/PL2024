@@ -19,7 +19,7 @@ Para executar o programa:
 ## Lista ordenada alfabeticamente das modalidades desportivas
 
 - Para ordenarmos alfabeticamente todas as modalidades, criamos um set(pois este não permite valores repetidos) e preenchemos o set com todas as modalides presentes.
-- Para ordenar, utilizamos a função sorted(), ordenando assim o set por ordem alfabetica.
+- Sendo assim, utilizamos a função sorted(), ordenando assim o set por ordem alfabetica.
 
 ## Percentagens de atletas aptos e inaptos para a prática desportiva
 
@@ -40,3 +40,5 @@ Para executar o programa:
 | Percentagens de atletas inaptos      | 46.0 % |
 | Distribuição de atletas por escalão etário      | [18-22]: 41, [23-27]: 96, [28-32]: 110, [33-37]: 53|
 
+[![aptos.png](https://i.postimg.cc/G3kFWHk6/aptos.png)](https://postimg.cc/qgv6nBDG)
+[![idades.png](https://i.postimg.cc/7Yw3ww9h/idades.png)](https://postimg.cc/ThNLc8Zv)
