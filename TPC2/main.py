@@ -1,4 +1,5 @@
 import re
+import sys
 
 def convertHeader(markdown):
     markdown = re.sub(r'^# (.+)$', r'<h1>\1</h1>', markdown, flags=re.MULTILINE)
@@ -25,26 +26,27 @@ def convertNumberedList(markdown):
 def addSpaceToLi(markdown):
     return re.sub(r'<li>(.+?)</li>',r'  <li>\1</li>', markdown)
 
+def main(args):
 
+    input_file = args[1]
+    output_file = args[2]
 
-#teste
-test = """
-# H1
-## H2
-### H3
+    with open(input_file, 'r') as f:
+        markdown_content = f.read()
 
-**bold text**
+    markdown_content = convertHeader(markdown_content)
+    markdown_content = convertBold(markdown_content)
+    markdown_content = convertItalic(markdown_content)
+    markdown_content = convertImage(markdown_content)
+    markdown_content = convertLink(markdown_content)
+    markdown_content = convertNumberedList(markdown_content)
+    markdown_content = addSpaceToLi(markdown_content)
 
-*italicized text*
+    with open(output_file, 'w') as f:
+        f.write(markdown_content)
 
-1. First item
-2. Second item
-3. Third item
+    print("Arquivo HTML gerado com sucesso:", output_file)
+    return 0
 
-[title](https://www.example.com)
-
-![alt text](image.jpg)
-"""
-
-html_output = convertLink(convertImage(addSpaceToLi(convertNumberedList(convertItalic(convertBold(convertHeader(test)))))))
-print(html_output)
+if __name__ == "__main__":
+    main(sys.argv)
