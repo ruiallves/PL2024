@@ -1,4 +1,4 @@
-# TPC3: Analisador Léxico
+# TPC4: Analisador Léxico
 
 Autor: Rui Pedro Castro Alves (a100699)
 
