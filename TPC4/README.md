@@ -1,4 +1,4 @@
-# TPC3: Somador on/off
+# TPC3: Analisador Léxico
 
 Autor: Rui Pedro Castro Alves (a100699)
 
