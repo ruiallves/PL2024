@@ -6,7 +6,7 @@ Autor: Rui Pedro Castro Alves (a100699)
 Para executar o programa:
 
 ```bash
-    $ python3 main.py
+    $ python3 main.py (nome do ficheiro MD para converter) (nome do ficheiro que vai ser convertido)
 ```
 
 ## Conversor de MarkDown para HTML
